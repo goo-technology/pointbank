@@ -1,0 +1,9 @@
+Building pointbank
+
+See doc/readme-qt.rst for instructions on building pointbank QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of pointbank.
+
+See doc/build-*.txt for instructions on building pointbankd,
+the intended-for-services, no-graphical-interface, reference
+implementation of pointbank.
