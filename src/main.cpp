@@ -2542,7 +2542,7 @@ bool LoadBlockIndex(bool fAllowNew)
         //    CTxOut(empty)
         //  vMerkleTree: 12630d16a9
 
-        const char* pszTimestamp = "The Times 10/11/2016 Chancellor on brink of second bailout for banks";
+        const char* pszTimestamp = "Es necesaria una política monetaria autónoma en los cripto activos";
         CTransaction txNew;
         txNew.nTime = 1478902744;
         txNew.vin.resize(1);
@@ -2556,9 +2556,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1478902744;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 162136 : 162136;
+        block.nNonce   = !fTestNet ? 291626 : 291626;
         
-        if (true  && (block.GetHash() != hashGenesisBlock)) {
+        if (false  && (block.GetHash() != hashGenesisBlock)) {
 
                 // This will figure out a valid hash and Nonce if you're
                 // creating a different genesis block:
@@ -2582,7 +2582,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
                 
-        assert(block.hashMerkleRoot == uint256("0xcd17600e9ab42215d1b49be3a31257ac7914d876dce1f4fbd1565f19731aa5f5"));
+        assert(block.hashMerkleRoot == uint256("0x64387fa9887e9721e015d9c1efc4b94dd6199c0dd3ffb9b84cf9e4914b87cc28"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
 

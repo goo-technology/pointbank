@@ -1,7 +1,7 @@
 
 pointbank development tree
 
-pointbank is a PoS-based cryptocurrency.
+pointbank is a proff of concept for an PoW/PoS-based cryptocurrency whit autonomous and descentraliced monetary policy.
 
 Development process
 ===========================
