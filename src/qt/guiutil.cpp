@@ -20,6 +20,7 @@
 #include <QFileDialog>
 #include <QDesktopServices>
 #include <QThread>
+#include <QUrl>
 
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
