@@ -1005,11 +1005,11 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
     
-            int64_t nSubsidy = 215 * COIN;
+            int64_t nSubsidy = 1 * COIN;
 
             if(nBestHeight == 0)
             {
-            nSubsidy = 10033333 * COIN;
+            nSubsidy = 1000000000 * COIN;
             }
 
     if (fDebug && GetBoolArg("-printcreation"))
@@ -2558,7 +2558,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = !fTestNet ? 291626 : 291626;
         
-        if (false  && (block.GetHash() != hashGenesisBlock)) {
+        if (true  && (block.GetHash() != hashGenesisBlock)) {
 
                 // This will figure out a valid hash and Nonce if you're
                 // creating a different genesis block:
